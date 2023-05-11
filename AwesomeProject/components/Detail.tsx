@@ -19,6 +19,7 @@ const Detail = ({route} : any) => {
             console.log(error);
             
         })
+        
   
     }, [])
     const Basket = ()=>{
@@ -27,10 +28,11 @@ const Detail = ({route} : any) => {
             title:data.title,
             count:1,
             price:data.price,
+            image:data.image
         }
 
-    setFavorites(data)
-    console.log(Data);
+    setFavorites([...favorites,Data])
+   
     console.log(favorites);
     
     }

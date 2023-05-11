@@ -1,4 +1,3 @@
-import axios from "axios";
 import { ReactNode, createContext, useEffect, useState } from "react";
 
 interface FavoritesProviderProps {
